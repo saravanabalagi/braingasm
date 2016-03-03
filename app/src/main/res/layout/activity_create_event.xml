@@ -24,88 +24,72 @@
                 <EditText
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:id="@+id/name"
-                    android:hint="Name" />
+                    android:id="@+id/title"
+                    android:hint="Title" />
 
             </android.support.design.widget.TextInputLayout>
 
-            <android.support.design.widget.TextInputLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-
-                <EditText
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/email"
-                    android:hint="Email" />
-
-            </android.support.design.widget.TextInputLayout>
-
-            <android.support.design.widget.TextInputLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-
-                <EditText
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/password"
-                    android:hint="Password" />
-
-            </android.support.design.widget.TextInputLayout>
-
-            <android.support.design.widget.TextInputLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-
-                <EditText
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/university"
-                    android:hint="University" />
-
-            </android.support.design.widget.TextInputLayout>
-
-            <android.support.design.widget.TextInputLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-
-                <EditText
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/college"
-                    android:hint="College" />
-
-            </android.support.design.widget.TextInputLayout>
+            <Spinner
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/type" />
 
             <LinearLayout android:orientation="horizontal"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
 
-                <android.support.design.widget.TextInputLayout
+                <EditText
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_weight="2">
+                    android:inputType="date"
+                    android:ems="10"
+                    android:id="@+id/from_date"
+                    android:layout_margin="5dp"
+                    android:hint="from mm/dd/yyyy"
+                    android:layout_weight="1"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false" />
 
-                    <EditText
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:id="@+id/degree"
-                        android:hint="Degree" />
-
-                </android.support.design.widget.TextInputLayout>
-
-                <android.support.design.widget.TextInputLayout
+                <EditText
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1">
+                    android:inputType="time"
+                    android:ems="10"
+                    android:id="@+id/from_time"
+                    android:layout_margin="5dp"
+                    android:hint="from hh:mm:ss"
+                    android:layout_weight="1"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false" />
 
-                    <EditText
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:id="@+id/branch"
-                        android:hint="Branch" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
 
-                </android.support.design.widget.TextInputLayout>
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="date"
+                    android:ems="10"
+                    android:id="@+id/to_date"
+                    android:layout_margin="5dp"
+                    android:hint="to mm/dd/yyyy"
+                    android:layout_weight="1"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="time"
+                    android:ems="10"
+                    android:id="@+id/to_time"
+                    android:layout_margin="5dp"
+                    android:hint="to hh:mm:yy"
+                    android:layout_weight="1"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false" />
 
             </LinearLayout>
 
@@ -116,8 +100,44 @@
                 <EditText
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:id="@+id/semester"
-                    android:hint="Semester" />
+                    android:id="@+id/venue"
+                    android:hint="Venue" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/fee"
+                    android:hint="Fee" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/link"
+                    android:hint="Link" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <AutoCompleteTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/related_topics"
+                    android:hint="" />
 
             </android.support.design.widget.TextInputLayout>
 
@@ -125,8 +145,8 @@
     </ScrollView>
 
     <android.support.design.widget.FloatingActionButton
-        android:src="@drawable/svg_android_user_add"
-        android:id="@+id/call"
+        android:src="@drawable/svg_android_plus"
+        android:id="@+id/add"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="20dp"
