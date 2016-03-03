@@ -10,6 +10,7 @@ public class Notes {
     int id;
     Course course;
     String title;
+    String description;
     Institution institution;
     int quality;
     int upvotes;

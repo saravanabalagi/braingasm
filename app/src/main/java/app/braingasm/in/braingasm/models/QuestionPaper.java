@@ -14,7 +14,7 @@ public class QuestionPaper {
     String publishedYear;
     int quality;
     int upvotes;
-    User user;
+    User uploadedBy;
     String coverLink;
     String pdfLink;
     enum Category { SEMESTER, ASSESSMENT, CLASS_TEST }
