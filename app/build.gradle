@@ -24,6 +24,7 @@ dependencies {
 
     //Essential Libraries
     compile 'com.jakewharton:butterknife:7.0.1'
+    compile 'com.mcxiaoke.volley:library:1.0.19'
     compile 'com.android.support:appcompat-v7:23.2.0'
     compile 'com.google.android.gms:play-services-maps:8.4.0'
     //Jackson JSON Parsing Libraries

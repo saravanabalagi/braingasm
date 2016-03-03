@@ -1,7 +1,8 @@
-package app.braingasm.in.braingasm;
+package app.braingasm.in.braingasm.custom;
 
 import android.app.Application;
 
+import app.braingasm.in.braingasm.R;
 import uk.co.chrisjenx.calligraphy.CalligraphyConfig;
 
 /**
