@@ -9,11 +9,11 @@ import butterknife.ButterKnife;
 /**
  * Created by Zeke on Mar 03, 2016.
  */
-public class UploadEventActivity extends BraingasmActivity {
+public class CreateEventActivity extends BraingasmActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_upload_event);
+        setContentView(R.layout.activity_create_event);
         ButterKnife.bind(this);
     }
 }
