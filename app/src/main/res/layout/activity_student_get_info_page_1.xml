@@ -21,54 +21,29 @@
                 android:orientation="horizontal"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:gravity="center_vertical">
+                android:gravity="center_horizontal"
+                android:layout_marginTop="-20dp"
+                android:layout_marginBottom="-10dp">
 
                 <ImageView
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:src="@drawable/svg_android_course"
-                    android:layout_marginTop="5dp"
-                    android:layout_marginRight="5dp" />
-
-                <android.support.design.widget.TextInputLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
-
-                    <EditText
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:id="@+id/course"
-                        android:hint="Course" />
-
-                </android.support.design.widget.TextInputLayout>
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:orientation="horizontal"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:gravity="center_vertical">
+                    android:layout_height="100dp"
+                    android:src="@drawable/svg_progress_start"
+                    android:tint="@color/accent" />
 
                 <ImageView
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:src="@drawable/svg_android_college"
-                    android:layout_marginTop="5dp"
-                    android:layout_marginRight="5dp" />
+                    android:layout_height="100dp"
+                    android:src="@drawable/svg_progress_middle"
+                    android:tint="@color/black_555"
+                    android:layout_marginLeft="-32dp" />
 
-                <android.support.design.widget.TextInputLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
-
-                    <EditText
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:id="@+id/college"
-                        android:hint="College" />
-
-                </android.support.design.widget.TextInputLayout>
-
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="100dp"
+                    android:src="@drawable/svg_progress_end"
+                    android:tint="@color/black_555"
+                    android:layout_marginLeft="-33dp" />
             </LinearLayout>
 
             <LinearLayout
@@ -107,9 +82,55 @@
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/svg_android_clock"
+                    android:src="@drawable/svg_android_college"
                     android:layout_marginTop="5dp"
                     android:layout_marginRight="5dp" />
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/college"
+                        android:hint="College" />
+
+                </android.support.design.widget.TextInputLayout>
+
+            </LinearLayout>
+
+            <LinearLayout android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:layout_weight="2">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/svg_android_course"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="5dp" />
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/degree"
+                            android:hint="Degree" />
+
+                    </android.support.design.widget.TextInputLayout>
+
+                </LinearLayout>
 
                 <android.support.design.widget.TextInputLayout
                     android:layout_width="match_parent"
@@ -119,21 +140,8 @@
                     <EditText
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:id="@+id/month"
-                        android:hint="Month" />
-
-                </android.support.design.widget.TextInputLayout>
-
-                <android.support.design.widget.TextInputLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="2">
-
-                    <EditText
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:id="@+id/year"
-                        android:hint="Year" />
+                        android:id="@+id/branch"
+                        android:hint="Branch" />
 
                 </android.support.design.widget.TextInputLayout>
 
@@ -148,14 +156,21 @@
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/svg_android_type"
+                    android:src="@drawable/svg_android_time_lapse"
                     android:layout_marginTop="5dp"
                     android:layout_marginRight="5dp" />
 
-                <Spinner
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/type" />
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/semester"
+                        android:hint="Semester" />
+
+                </android.support.design.widget.TextInputLayout>
 
             </LinearLayout>
 
@@ -163,8 +178,8 @@
     </ScrollView>
 
     <android.support.design.widget.FloatingActionButton
-        android:src="@drawable/svg_android_tick"
-        android:id="@+id/done"
+        android:src="@drawable/svg_android_user_add"
+        android:id="@+id/call"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="20dp"

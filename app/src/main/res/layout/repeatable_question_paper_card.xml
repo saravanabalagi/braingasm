@@ -11,7 +11,7 @@
         android:padding="10dp">
 
         <LinearLayout
-            android:orientation="vertical"
+            android:orientation="horizontal"
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
@@ -19,8 +19,24 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Course"
-                android:id="@+id/title"
-                android:textSize="20sp" />
+                android:id="@+id/course"
+                android:textSize="20sp"
+                android:layout_marginRight="5dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="|"
+                android:textSize="20sp"
+                android:layout_marginRight="5dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Type"
+                android:id="@+id/type"
+                android:textSize="20sp"
+                android:layout_marginRight="5dp" />
         </LinearLayout>
 
         <LinearLayout
@@ -32,21 +48,20 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Month"
-                android:id="@+id/course"
+                android:id="@+id/month"
                 android:layout_marginRight="5dp" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text=", "
-                android:id="@+id/textView2"
                 android:layout_marginLeft="-5dp" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Year"
-                android:id="@+id/textView"
+                android:id="@+id/year"
                 android:layout_marginRight="5dp" />
 
             <TextView
@@ -86,7 +101,7 @@
                 <ImageView
                     android:layout_width="15dp"
                     android:layout_height="15dp"
-                    android:src="@drawable/svg_android_user"
+                    android:src="@drawable/svg_android_user_circled"
                     android:layout_marginLeft="5dp"
                     android:layout_marginRight="5dp" />
 
@@ -158,16 +173,18 @@
     <LinearLayout
         android:orientation="horizontal"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:padding="10dp" >
+        android:layout_height="wrap_content">
 
         <LinearLayout android:orientation="horizontal"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:gravity="center_vertical"
-            android:paddingRight="10dp"
-            android:paddingLeft="10dp">
+            android:paddingRight="20dp"
+            android:paddingLeft="20dp"
+            android:id="@+id/like"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp">
 
             <ImageView
                 android:layout_width="wrap_content"
@@ -195,8 +212,11 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:gravity="center_vertical|right"
-            android:paddingRight="10dp"
-            android:paddingLeft="10dp" >
+            android:paddingRight="20dp"
+            android:paddingLeft="20dp"
+            android:id="@+id/comment"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp">
 
             <ImageView
                 android:layout_width="wrap_content"

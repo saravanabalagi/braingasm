@@ -40,7 +40,6 @@
                 android:layout_height="wrap_content"
                 android:textColor="@color/accent"
                 android:id="@+id/logo_text_red"
-                android:paddingTop="2dp"
                 android:textSize="17sp"
                 android:text="gasm" />
 

@@ -17,37 +17,83 @@
             android:layout_height="wrap_content"
             android:padding="20dp">
 
-            <android.support.design.widget.TextInputLayout
+            <ImageView
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="200dp"
+                android:src="@drawable/png_user_folder" />
 
-                <EditText
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="20dp">
+
+                <LinearLayout
+                    android:orientation="horizontal"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:id="@+id/email"
-                    android:hint="Email" />
+                    android:gravity="center_vertical">
 
-            </android.support.design.widget.TextInputLayout>
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/svg_android_user_circled"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="5dp" />
 
-            <android.support.design.widget.TextInputLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
 
-                <EditText
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/name"
+                            android:hint="Name" />
+
+                    </android.support.design.widget.TextInputLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:id="@+id/password"
-                    android:hint="Password" />
+                    android:gravity="center_vertical">
 
-            </android.support.design.widget.TextInputLayout>
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/svg_android_lock"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="5dp" />
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="textPassword"
+                            android:id="@+id/password"
+                            android:hint="Password" />
+
+                    </android.support.design.widget.TextInputLayout>
+
+                </LinearLayout>
+            </LinearLayout>
 
 
         </LinearLayout>
+
     </ScrollView>
 
+
+
     <android.support.design.widget.FloatingActionButton
-        android:src="@android:drawable/ic_menu_call"
-        android:id="@+id/call"
+        android:src="@drawable/svg_android_tick"
+        android:id="@+id/login"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="20dp"

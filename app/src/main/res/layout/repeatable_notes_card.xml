@@ -73,7 +73,7 @@
                 <ImageView
                     android:layout_width="15dp"
                     android:layout_height="15dp"
-                    android:src="@drawable/svg_android_user"
+                    android:src="@drawable/svg_android_user_circled"
                     android:layout_marginLeft="5dp"
                     android:layout_marginRight="5dp" />
 
@@ -145,16 +145,18 @@
     <LinearLayout
         android:orientation="horizontal"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:padding="10dp" >
+        android:layout_height="wrap_content">
 
         <LinearLayout android:orientation="horizontal"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:gravity="center_vertical"
-            android:paddingRight="10dp"
-            android:paddingLeft="10dp">
+            android:id="@+id/like"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp">
 
             <ImageView
                 android:layout_width="wrap_content"
@@ -182,8 +184,11 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:gravity="center_vertical|right"
-            android:paddingRight="10dp"
-            android:paddingLeft="10dp" >
+            android:id="@+id/comment"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp">
 
             <ImageView
                 android:layout_width="wrap_content"
