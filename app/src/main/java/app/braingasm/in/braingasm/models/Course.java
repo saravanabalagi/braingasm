@@ -10,7 +10,7 @@ public class Course {
     int id;
     String code;
     String title;
-    University university;
+    College college;
     String branch;
     String degree;
     String regulation;

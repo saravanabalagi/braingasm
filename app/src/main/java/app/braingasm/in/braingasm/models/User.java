@@ -7,11 +7,14 @@ import java.util.ArrayList;
  */
 public class User {
 
+    public enum Type { STUDENT, ENTREPRENEUR }
+
     int id;
     String name;
     String email;
     String password;
-    Institution institution;
+    College college;
+    String avatar;
     String degree;
     String branch;
     String sememster;
@@ -19,8 +22,17 @@ public class User {
     String state;
     String country;
     ArrayList<Topic> interestedTopics;
+    Type type;
 
     int contributionPoints;
     int knowledgePoints;
+
+    public void setType(String type) {
+        switch (type) {
+            case "student": this.type = Type.STUDENT; break;
+            case "entrepreneur": this.type = Type.ENTREPRENEUR; break;
+            default: this.type = Type.STUDENT;
+        }
+    }
 
 }
