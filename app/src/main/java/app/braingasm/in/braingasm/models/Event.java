@@ -7,6 +7,7 @@ import android.widget.TextView;
 
 import com.android.volley.toolbox.ImageLoader;
 import com.android.volley.toolbox.NetworkImageView;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 import java.util.ArrayList;
 
@@ -19,6 +20,7 @@ import app.braingasm.in.braingasm.utils.WordUtils;
 /**
  * Created by Zeke on Mar 03, 2016.
  */
+@JsonIgnoreProperties(ignoreUnknown = true)
 public class Event {
 
     enum Type { WORKSHOP, CONFERENCE, TECHTALK, HACKATHON, EXHIBIT, SYMPOSIUM, INTERN, JOB }

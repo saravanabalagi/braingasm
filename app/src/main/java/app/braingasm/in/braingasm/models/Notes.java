@@ -7,6 +7,7 @@ import android.widget.TextView;
 
 import com.android.volley.toolbox.ImageLoader;
 import com.android.volley.toolbox.NetworkImageView;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 import java.util.ArrayList;
 
@@ -17,6 +18,7 @@ import app.braingasm.in.braingasm.utils.DateUtils;
 /**
  * Created by Zeke on Mar 03, 2016.
  */
+@JsonIgnoreProperties(ignoreUnknown = true)
 public class Notes {
 
     int id;
@@ -37,7 +39,7 @@ public class Notes {
         ImageLoader imageLoader = Pegasus.getInstance(context).getImageLoader();
         ((TextView) notesLayout.findViewById(R.id.title)).setText(title);
         ((TextView) notesLayout.findViewById(R.id.course)).setText(course.title);
-        ((TextView) notesLayout.findViewById(R.id.university)).setText(college.university.name);
+        ((TextView) notesLayout.findViewById(R.id.university)).setText(college.university);
         ((TextView) notesLayout.findViewById(R.id.uploader)).setText(uploader.name);
         ((TextView) notesLayout.findViewById(R.id.contribution_points)).setText(uploader.contributionPoints);
         ((TextView) notesLayout.findViewById(R.id.knowledge_points)).setText(uploader.knowledgePoints);
@@ -46,7 +48,7 @@ public class Notes {
         ((TextView) notesLayout.findViewById(R.id.like_count)).setText(likes);
         ((TextView) notesLayout.findViewById(R.id.comment_count)).setText(comments.size());
         ((NetworkImageView) notesLayout.findViewById(R.id.image)).setImageUrl(coverLink,imageLoader);
-        if(uploader.avatar !=null) ((NetworkImageView) notesLayout.findViewById(R.id.uploader_dp)).setImageUrl(uploader.avatar,imageLoader);
+        if(uploader.avatar !=null) ((NetworkImageView) notesLayout.findViewById(R.id.uploader_dp)).setImageUrl(uploader.avatar.url,imageLoader);
         notesLayout.findViewById(R.id.image).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

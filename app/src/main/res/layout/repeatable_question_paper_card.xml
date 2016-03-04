@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="wrap_content">
+    android:layout_height="wrap_content"
+    android:background="@color/white">
 
 
     <LinearLayout
@@ -226,11 +227,24 @@
 
     </LinearLayout>
 
-    <com.android.volley.toolbox.NetworkImageView
+    <FrameLayout
         android:layout_width="match_parent"
-        android:layout_height="300dp"
-        android:id="@+id/image"
-        android:layout_marginTop="10dp" />
+        android:layout_height="match_parent">
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/progressBar"
+            android:layout_gravity="center"
+            android:layout_margin="50dp" />
+
+        <com.android.volley.toolbox.NetworkImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/image"
+            android:layout_marginTop="10dp"
+            android:adjustViewBounds="true" />
+    </FrameLayout>
 
     <LinearLayout
         android:orientation="horizontal"

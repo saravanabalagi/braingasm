@@ -6,6 +6,7 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
 import app.braingasm.in.braingasm.R;
@@ -14,6 +15,7 @@ import app.braingasm.in.braingasm.utils.WordUtils;
 /**
  * Created by Zeke on Mar 03, 2016.
  */
+@JsonIgnoreProperties(ignoreUnknown = true)
 public class Notification {
 
     enum Type { LIKE, NEW, COMMENT }
@@ -57,7 +59,7 @@ public class Notification {
         LinearLayout notificationLayout = (LinearLayout) View.inflate(context, R.layout.repeatable_notification_card, null);
         String objectDef = "";
         switch (objectType) {
-            case QUESTION_PAPER: objectDef = (((QuestionPaper) notificationObject).course.title + ((QuestionPaper) notificationObject).college.university.name); break;
+            case QUESTION_PAPER: objectDef = (((QuestionPaper) notificationObject).name + ((QuestionPaper) notificationObject).college.university); break;
             case NOTES: objectDef = ((Notes) notificationObject).title; break;
             case EVENT: objectDef = ((Event) notificationObject).title; break;
         }

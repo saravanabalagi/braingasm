@@ -1,10 +1,13 @@
 package app.braingasm.in.braingasm.models;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+
 import java.util.ArrayList;
 
 /**
  * Created by Zeke on Mar 03, 2016.
  */
+@JsonIgnoreProperties(ignoreUnknown = true)
 public class User {
 
     public enum Type { STUDENT, ENTREPRENEUR }
@@ -14,7 +17,7 @@ public class User {
     String email;
     String password;
     College college;
-    String avatar;
+    Avatar avatar;
     String degree;
     String branch;
     String sememster;

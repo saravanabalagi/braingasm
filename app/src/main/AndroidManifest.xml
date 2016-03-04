@@ -5,7 +5,7 @@
     <application
         android:name=".custom.Calligraphy"
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@drawable/launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
@@ -20,6 +20,7 @@
         <activity android:name=".NotesActivity" />
         <activity android:name=".MainActivity" />
         <activity android:name=".LoginActivity" />
+        <activity android:name=".CameraCaptureActivity" android:parentActivityName=".MainActivity" />
         <activity android:name=".SignupActivity" android:parentActivityName=".LoginActivity" />
         <activity android:name=".UploadQuestionPaperActivity" android:parentActivityName=".QuestionPaperActivity" />
         <activity android:name=".CreateEventActivity" android:parentActivityName=".EventsActivity" />
