@@ -2,12 +2,11 @@
 <resources>
     <color name="primary">#333333</color>
     <color name="primary_dark">#222222</color>
-    <color name="accent_white_bg">#00710a</color>
-    <color name="accent">#00a30e</color>
-    <color name="accent_dark_bg">#00d012</color>
+    <color name="accent_white_bg">#008fc8</color>
+    <color name="accent">#00B1F7</color>
+    <color name="accent_dark_bg">#56cbfa</color>
 
     <color name="transparent">#00000000</color>
-    <color name="white">#ffffff</color>
     <color name="black">#000000</color>
     <color name="black_111">#111111</color>
     <color name="black_222">#222222</color>
@@ -16,6 +15,17 @@
     <color name="black_333">#333333</color>
     <color name="black_444">#444444</color>
     <color name="black_555">#555555</color>
+
+    <color name="white">#ffffff</color>
+    <color name="white_f5f5f5">#f5f5f5</color>
+    <color name="white_EEE">#eeeeee</color>
+    <color name="white_DDD">#dddddd</color>
+    <color name="white_CCC">#cccccc</color>
+    <color name="white_BBB">#bbbbbb</color>
+    <color name="white_AAA">#aaaaaa</color>
+    <color name="white_999">#999999</color>
+
+
 
     <color name="primary_text_dark">#fcfcfc</color>
     <color name="primary_text_disable_dark">#f0f0f0</color>
