@@ -16,5 +16,7 @@ public class NumberUtils {
         }
         return true;
     }
+    public static String getCurrencyFormatWithInr(float f) { return "INR " + getCurrencyFormat(f);}
+    public static String getCurrencyFormatWithInr(double d) { return "INR " + getCurrencyFormat(d);}
 
 }
