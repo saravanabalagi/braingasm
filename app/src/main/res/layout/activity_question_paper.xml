@@ -14,7 +14,8 @@
         <LinearLayout
             android:orientation="vertical"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:id="@+id/fill_layout">
 
 
 
@@ -22,8 +23,8 @@
     </ScrollView>
 
     <android.support.design.widget.FloatingActionButton
-        android:src="@android:drawable/ic_menu_call"
-        android:id="@+id/call"
+        android:src="@drawable/svg_android_add"
+        android:id="@+id/add"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="20dp"
