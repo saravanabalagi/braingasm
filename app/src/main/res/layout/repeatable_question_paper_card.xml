@@ -99,18 +99,75 @@
                 android:gravity="center_vertical"
                 android:padding="5dp">
 
-                <ImageView
-                    android:layout_width="15dp"
-                    android:layout_height="15dp"
-                    android:src="@drawable/svg_android_user_circled"
-                    android:layout_marginLeft="5dp"
-                    android:layout_marginRight="5dp" />
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
 
-                <TextView
+                    <app.braingasm.in.braingasm.custom.CircularNetworkImageView
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:src="@drawable/svg_android_user_circled"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:id="@+id/uploader_dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Shajahan Sheriff"
+                        android:textSize="12sp"
+                        android:id="@+id/uploader" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Shajahan Sheriff"
-                    android:textSize="12sp" />
+                    android:layout_marginLeft="10dp">
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical">
+
+                        <ImageView
+                            android:layout_width="10dp"
+                            android:layout_height="10dp"
+                            android:src="@drawable/svg_android_graph"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="512"
+                            android:id="@+id/contribution_points"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical">
+
+                        <ImageView
+                            android:layout_width="10dp"
+                            android:layout_height="10dp"
+                            android:src="@drawable/svg_android_puzzle"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="512"
+                            android:id="@+id/knowledge_points"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+                </LinearLayout>
 
             </LinearLayout>
 
@@ -132,9 +189,11 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Jan 21, 2016 11:15am"
-                    android:textSize="12sp" />
+                    android:textSize="12sp"
+                    android:id="@+id/uploaded_at" />
 
             </LinearLayout>
+
         </LinearLayout>
 
         <LinearLayout android:orientation="horizontal"
@@ -154,7 +213,8 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="100" />
+                android:text="100"
+                android:id="@+id/quality" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -166,7 +226,7 @@
 
     </LinearLayout>
 
-    <ImageView
+    <com.android.volley.toolbox.NetworkImageView
         android:layout_width="match_parent"
         android:layout_height="300dp"
         android:id="@+id/image"
@@ -198,7 +258,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="512"
-                android:padding="10dp" />
+                android:padding="10dp"
+                android:id="@+id/like_count" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -231,7 +292,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="512"
-                android:padding="10dp" />
+                android:padding="10dp"
+                android:id="@+id/comment_count" />
 
             <TextView
                 android:layout_width="wrap_content"
