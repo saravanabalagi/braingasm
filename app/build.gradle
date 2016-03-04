@@ -34,4 +34,5 @@ dependencies {
     //Material Design Compatibility Libraries
     compile 'uk.co.chrisjenx:calligraphy:2.1.0'
     compile 'com.android.support:design:23.2.0'
+    compile 'de.hdodenhof:circleimageview:2.0.0'
 }

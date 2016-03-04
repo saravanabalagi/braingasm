@@ -17,9 +17,8 @@
             android:layout_height="wrap_content"
             android:id="@+id/fill_layout">
 
-
-
         </LinearLayout>
+
     </ScrollView>
 
     <android.support.design.widget.FloatingActionButton
